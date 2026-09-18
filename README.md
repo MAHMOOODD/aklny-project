@@ -74,8 +74,8 @@ The project is designed to be reusable as a template that can be adapted and sol
 ## 📂 Project Structure
 
 ```
-Restaurant_Project/
-├── Restaurant_Backend/         # ASP.NET Core Web API
+aklny-project/
+├── backend/                     # ASP.NET Core Web API
 │   ├── Controllers/            # API endpoints
 │   ├── Services/                # Business logic layer
 │   ├── Repositories/            # Data access layer (Repository Pattern)
@@ -92,8 +92,6 @@ Restaurant_Project/
     └── .env.example
 ```
 
-> Note: the actual backend folder is currently named `Resturant_Backend` (typo). Consider renaming it to `Restaurant_Backend` for consistency — just remember to update any build scripts / CI config that reference the old path.
-
 ---
 
 ## 🚀 Getting Started
@@ -105,7 +103,7 @@ Restaurant_Project/
 
 ### Backend
 ```bash
-cd Resturant_Backend
+cd backend
 cp appsettings.Template.json appsettings.json   # fill in your connection string & secrets
 dotnet restore
 dotnet ef database update
@@ -140,4 +138,4 @@ npm run dev
 
 ---
 
-© 2026 Mahmoud Salah. All rights reserved
+© 2026 Mahmoud Salah. All rights reserved.
